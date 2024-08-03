@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block head_content %}
+        <script src="{{ url_for('static', filename='escape_the_tunnel.js') }}" type="module"></script>
+{% endblock %}
+
+
+{% block main_content %}
+        <canvas width="512" height="320">
+        </canvas>
+        <section id="ui">
+            <p>To cheat(remove incorrect paths): press "f"</p>
+            <p id="berserker">Berserker Mode left: 1</p>
+        </section>
+        <section id="result">
+            <p id="timer">1:00</p>
+            <p id="outcome"></p>
+            <a href="" id="play_again"></a>
+        </section>
+{% endblock %}

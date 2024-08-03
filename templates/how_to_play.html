@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+        <h1>How to Play</h1>
+        <h2>Aim</h2>
+        <p>The aim of the game is to make it through the maze of tunnels before the timer runs out, or you are hit by one of the
+            enemies. <strong>BEWARE</strong> however, that some of the tunnels are collapsed and you will not be able to get through them.
+            You will need to navigate through the correct path to make it out safely. You will receive a score once you complete the maze. 
+            Check your score on the leaderboard <a href="{{ url_for('leaderboard') }}">here.</a>
+        </p>
+
+        <h2>Controls</h2>
+        <ul>
+            <li>Up: Up Arrow Key</li>
+            <li>Down: Down Arrow Key</li>
+            <li>Left: Left Arrow Key</li>
+            <li>Right: Right Arrow Key</li>
+            <li>Shield (One time use): Space Bar</li>
+            <li>Cheat: F Key</li>
+        </ul>
+
+{% endblock %}

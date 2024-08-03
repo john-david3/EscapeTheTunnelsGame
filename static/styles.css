@@ -1,0 +1,129 @@
+body{
+    background-color: #e4c49b;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color:#800080;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+nav *{
+    padding:1em;
+}
+
+h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2{
+    font-size:2em;
+    text-align:center;
+}
+
+p, a{
+    font-size:1.25em;
+    text-decoration: none;
+    color:#f5f5f5;
+    text-align:center;
+}
+
+main{
+    width:100%;
+}
+
+main a{
+    display:block;
+    padding:1em;
+    border:3px solid black;
+    width:fit-content;
+    margin:1em auto;
+    background-color: #d5cfdf;
+    color:#800080;
+}
+
+p{
+    margin:0 12em;
+    margin-bottom:2em;
+}
+
+ul, li{
+    text-align: center;
+    list-style-type: none;
+    margin:0 auto;
+    padding-inline-start:0px;
+}
+
+li{
+    padding:1em;
+    color:#f5f5f5
+}
+
+table, th, td{
+    border-collapse:collapse;
+    border:1px solid black;
+    text-align:center;
+    margin:0 auto;
+}
+
+th, td{
+    padding:0.25em
+}
+
+tr:nth-child(odd){
+    background-color: #9a009a;
+}
+
+tr:nth-child(even){
+    background-color: #ff35ff;
+}
+
+p>a{
+    color:blue;
+    text-decoration: underline;
+    font-size:1em;
+}
+
+canvas{
+    background-color:black;
+    display:block;
+    margin:1em auto;
+    margin-bottom:0em;
+}
+
+form{
+    text-align: center;
+    padding:1em;
+}
+form *{
+    margin:.75em
+}
+
+#ui p, #result p{
+    margin:.5em
+}
+
+#ui{
+    margin-bottom:1em;
+    background-color:#9a009a;
+    border:1px solid black;
+    width:512px;
+    margin:0 auto
+}
+
+#result{
+    text-align:center;
+    margin-top:1em 
+}
+
+#result a{
+    margin:1em
+}
+
+footer{
+    text-align: center;
+    display:inline;
+}
+

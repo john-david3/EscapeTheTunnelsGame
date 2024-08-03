@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+        <h1>Welcome to Escape the Tunnels</h1>
+        <p>The game is simple. The goal: to manuever your way around the tunnels, trying to find the exit before getting caught by
+                the monsters lurking within. Can you make it through both layers of the tunnels in the given time?
+        </p>
+        <p><strong>Note: You can hold the arrow keys to move faster.</strong></p>
+        <main>
+                <a href="{{ url_for('play') }}">Play Game</a>
+                <a href="{{ url_for('leaderboard') }}">Leaderboard</a>
+                <a href="{{ url_for('how_to_play') }}">How to Play</a>
+        </main>
+        <footer>
+                <p>Find credits <a href="{{ url_for('static', filename='ca2credits.pdf') }}">here</a></p>
+        </footer>
+{% endblock %}

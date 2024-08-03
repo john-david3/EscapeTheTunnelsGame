@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+        <h1>Leaderboard</h1>
+        <p><a href="{{ url_for('play') }}">Play here</a> to get on the leaderboard</p>
+        
+        {% if leaders %}
+        <table>
+            <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">User</th>
+                <th scope="col">Score</th>
+            </tr>
+            {% for leader in leaders %}
+            <tr>
+                <!-- Resource used:https://stackoverflow.com/questions/7537439/how-to-increment-a-variable-on-a-for-loop-in-jinja-template-->
+                <td>{{ loop.index }}</td>
+                <td>{{ leader['user_id'] }}</td>
+                <td>{{ leader['score'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+        
+        
+
+{% endblock %}
